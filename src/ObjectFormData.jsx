@@ -8,20 +8,11 @@ export default function ObjectFormData() {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
-          <input type="text" {...register(`obj.a.input1`)} />
-          <input type="text" {...register(`obj.a.input2`)} />
-          <input type="text" {...register(`obj.a.input3`)} />
-        </div>
-        <div>
-          <input type="text" {...register(`obj.b.input1`)} />
-          <input type="text" {...register(`obj.b.input2`)} />
-          <input type="text" {...register(`obj.b.input3`)} />
-        </div>
-        <button type="submit">Get Values</button>
-      </form>
-    </>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input type="text" {...register(`obj.a.input`)} />
+      <input type="text" {...register(`obj.b.input`)} />
+      <input type="text" {...register(`obj.c.input`)} />
+      <input type="submit" />
+    </form>
   );
 }
