@@ -10,17 +10,10 @@ export default function ArrayFormData() {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
-          <input type="text" {...register(`obj.0.input1`)} />
-          <input type="text" {...register(`obj.0.input2`)} />
-          <input type="text" {...register(`obj.0.input3`)} />
-        </div>
-        <div>
-          <input type="text" {...register(`obj.1.input1`)} />
-          <input type="text" {...register(`obj.1.input2`)} />
-          <input type="text" {...register(`obj.1.input3`)} />
-        </div>
-        <button type="submit">Get Values</button>
+        <input type="text" {...register(`obj.0.input`)} />
+        <input type="text" {...register(`obj.1.input`)} />
+        <input type="text" {...register(`obj.2.input`)} />
+        <input type="submit" />
       </form>
     </>
   );
